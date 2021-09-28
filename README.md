@@ -1,0 +1,2 @@
+# appmaker-categories
+Categories
