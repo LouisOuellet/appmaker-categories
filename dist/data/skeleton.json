@@ -1,0 +1,54 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "created": "2021-04-05 15:12:56",
+            "modified": "2021-04-05 15:12:56",
+            "owner": "1",
+            "updated_by": "1",
+            "name": "Application",
+            "status": "1",
+            "relationship": "tickets"
+        },
+        {
+            "id": 2,
+            "created": "2021-04-05 15:13:25",
+            "modified": "2021-04-05 15:13:25",
+            "owner": "1",
+            "updated_by": "1",
+            "name": "Network",
+            "status": "1",
+            "relationship": "tickets"
+        },
+        {
+            "id": 4,
+            "created": "2021-04-08 11:16:35",
+            "modified": "2021-04-08 11:16:35",
+            "owner": "1",
+            "updated_by": "1",
+            "name": "containers",
+            "status": "1",
+            "relationship": "subscriptions"
+        },
+        {
+            "id": 5,
+            "created": "2021-04-08 11:16:35",
+            "modified": "2021-04-08 11:16:35",
+            "owner": "1",
+            "updated_by": "1",
+            "name": "tickets",
+            "status": "1",
+            "relationship": "subscriptions"
+        },
+        {
+            "id": 6,
+            "created": "2021-04-08 11:16:35",
+            "modified": "2021-04-08 11:16:35",
+            "owner": "1",
+            "updated_by": "1",
+            "name": "organizations",
+            "status": "1",
+            "relationship": "subscriptions"
+        }
+    ]
+}
