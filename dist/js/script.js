@@ -15,9 +15,9 @@ API.Plugins.categories = {
 				},function(result) {
 					var dataset = JSON.parse(result);
 					if(dataset.success != undefined){
-						for(const [key, value] of Object.entries(dataset.output.results)){ API.Helper.set(API.Contents,['data','dom','categories',value.name],value); }
+						for(const [key, value] of Object.entries(dataset.output.dom)){ API.Helper.set(API.Contents,['data','dom','categories',value.name],value); }
 						for(const [key, value] of Object.entries(dataset.output.raw)){ API.Helper.set(API.Contents,['data','raw','categories',value.name],value); }
-						API.Builder.table(card.children('.card-body'), dataset.output.results, {
+						API.Builder.table(card.children('.card-body'), dataset.output.dom, {
 							headers:dataset.output.headers,
 							id:'CategoriesIndex',
 							modal:true,
@@ -43,7 +43,7 @@ API.Plugins.categories = {
 					API.request('categories','read',{data:{id:id,key:'name'}},function(result){
 						var dataset = JSON.parse(result);
 						if(dataset.success != undefined){
-							API.GUI.insert(dataset.output.results);
+							API.GUI.insert(dataset.output.dom);
 						}
 					});
 				}
